@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+/* ================= HEADER ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #0d47a1, #0288d1, #4fc3f7);
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.15);
+}
+
+header .logo h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.12);
+    transition: all 0.25s ease;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #facc15;
+}
+
+
+/* ================= CONTENEDOR DE PERFIL ================= */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding: 40px 20px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 36px 32px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+.register-container h2 {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d47a1;
+    letter-spacing: -0.3px;
+}
+
+/* ================= ENTRADAS Y FORMULARIO ================= */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+    font-size: 14px;
+}
+
+.input-group input,
+.profile-select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #0f172a;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus,
+.profile-select:focus {
+    outline: none;
+    border-color: #0288d1;
+    box-shadow: 0 0 0 4px rgba(2, 136, 209, 0.15);
+}
+
+/* ================= BOTÓN GUARDAR PERFIL ================= */
+.btn-register {
+    width: 100%;
+    padding: 13px 20px;
+    background: linear-gradient(135deg, #0d47a1, #0288d1);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.25);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-register:hover {
+    background-color: #facc15;;
+    box-shadow: 0 6px 18px rgba(13, 71, 161, 0.35);
+    transform: translateY(-2px);
+}
+
+.btn-register:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(13, 71, 161, 0.2);
+}
