@@ -47,13 +47,23 @@
                     </section>
 
                     <section class="input-group">
-                        <label for="curso">Curso / Nivel</label>
-                        <input type="text" id="curso" name="curso" placeholder="Ej: 3° Medio TP">
-                    </section>
+                        <label for="institucion">Institución</label>     
+                        <select name="institucion" id="institucion" required>
+                            <option value="seleccionar">Seleccionar</option>     
+                            <option value="primero">Enseñaza Básica</option>
+                            <option value="segundo">Enseñanza Media</option>
+                            <option value="tercero">Enseñanza Técnica</option>
+                            <option value="cuarto">Universidad</option>
+                        </select>
 
-                    <section class="input-group">
-                        <label for="especialidad">Especialidad</label>
-                        <input type="text" id="especialidad" name="especialidad" placeholder="Ej: Programación">
+                        <label for="curso">Curso / Nivel</label>
+                        <select name="curso/nivel" id="curso" required>
+                            <option value="seleccionar">Seleccionar</option>
+                            <option value="primero">1°</option>
+                            <option value="segundo">2°</option>
+                            <option value="tercero">3°</option>
+                            <option value="cuarto">4°</option>
+                        </select>
                     </section>
 
                 <!-- Campos Docente -->
