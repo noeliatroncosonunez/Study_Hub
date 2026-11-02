@@ -24,16 +24,50 @@
                 <a href="../contacto.html">Contacto</a>
             </nav>
 
-        <!-- Botones de Sesión -->
+        <!-- Botones de Sesión / Menú de Usuario -->
         <article id="usuarioLogueado" class="usuario">
-            <a href="iniciar sesion/iniciar sesion.html" class="btn btn-login">Iniciar Sesión</a>
-            <a href="Crear Cuenta/crear cuenta.html" class="btn btn-register">Crear Cuenta</a>
+
+            <!-- ESTADO 1: Usuario SIN sesión (Visibles por defecto) -->
+            <article class="authButtons" class="auth-buttons hidden">
+                <a href="iniciar sesion/iniciar sesion.html" class="btn btn-login">Iniciar Sesión</a>
+                <a href="Crear Cuenta/crear cuenta.html" class="btn btn-register">Crear Cuenta</a>
+            </article>
+
+
+            <!-- ESTADO 2: Usuario CON sesión (Oculto por defecto con la clase 'hidden') -->
+             <article id="userProfileMenu" class="user-menu-container>
+                <button type="button" id="userMenuBtn" class="user-menu-btn" aria-label="Abrir menú de usuario">
+                    <div class="user-avatar" id="headerAvatar">N</div>
+                </button>
+
+                <div id="userDropdown" class="user-dropdown hidden">
+                    <article class="user-dropdown-header">
+                        <div class="user-avatar-large" id="dropdownAvatar">N</div>
+                        <div class="user-info">
+                            <span id="dropdownUserName" class="user-name">Usuario Study Hub</span>
+                            <span id="dropdownUserEmail" class="user-email">usuario@ejemplo.com</span>
+                            <span id="dropdownUserRole" class="user-badge">👨‍🎓 Estudiante TP</span>
+                        </div>
+                    </article>
+
+                    <hr class="dropdown-divider">
+                        <ul>
+                            <li><a href="../Study_Hub/Perfil/perfil.html" class="dropdown.item"><span class="item-icon">👤</span>Mi Perfil</a></li>
+                            <li><a href="../logros.html" class="dropdown-item"><span class="item-icon">🏆</span>Mis Logros</a></li>
+                        </ul>
+                    <hr class="dropdown-divider">
+
+                        <div class="user-dropdown-list">
+                            <button type="button" id="logoutBtn" class="dropdown-item logout-item">
+                                <span class="item-icon">🚪</span> Cerrar Sesión
+                            </button>
+                        </div>
+                </div>
+             </article>
         </article>
     </header>
 
-        <main>
-
-        
+    <main> 
         <section>
                 <h2>Aprende mejor 🚀</h2>
                 <p>Plataforma educativa moderna enfocada en el aprendizaje autónomo.</p>
@@ -137,8 +171,8 @@
                     <p>Sí, se requiere conexión a Internet constante para guardar tu progreso en tiempo real y acceder al contenido multimedia.</p>
                 </article>
             </section>
-    </section>
-</main>
+        </section>
+    </main>
 
         <!-- Footer -->
          <footer>© 2026 Study hub - Plataforma de Aprendizaje Autónomo</footer>

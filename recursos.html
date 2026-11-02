@@ -8,74 +8,180 @@
 </head>
 <body>
 
-    <header class="header-recursos">
-        <h1>📚 Recursos Educativos</h1>
-        <p>
-            Accede a materiales de aprendizaje diseñados para complementar tus estudios y mejorar tu rendimiento académico.
-        </p>
+    <!--Encabezado de Sección (Hero) -->
+    <header class="Hero-recursos">
+        <article class="hero-content">
+            <span class="badge-hero">📚 Centro de Aprendizaje</span>
+            <h1>Recursos Educativos</h1>
+            <p>Accede a materiales interactivos, guías decardables y herramientas guiadas para potenciar tu redimiento académico.</p>
+            
+            <!-- Buscador de Recursos -->
+            <article class="search-box">
+                <input type="text" placeholder="Buscar guías, videos y ejercicios en PDF...">
+                <button class="btn-search">Buscar Recursos</button>
+            </article>
+        </article>
     </header>
 
-    <main class="contenedor-recursos">
+    <!-- Contenido Principal -->
+    <main class="contenedor-principal">
 
-        <div class="recurso-card">
-            <div class="icono">🎥</div>
-            <h3>Videos Educativos</h3>
-            <p>
-                Aprende mediante clases grabadas, tutoriales y explicaciones paso a paso.
-            </p>
-            <button>Explorar</button>
-        </div>
+        <!-- Métricas Rápidas / Estadísticas -->
+         <article class="recursos-stats">
+            <article class="stat-item">
+                <span class="stat-number">+150</span>
+                <span class="stat-label">Videos y Guías</span>
+            </article>
 
-        <div class="recurso-card">
-            <div class="icono">📝</div>
-            <h3>Quizzes Interactivos</h3>
-            <p>
-                Evalúa tus conocimientos con cuestionarios dinámicos y ejercicios prácticos.
-            </p>
-            <button>Comenzar</button>
-        </div>
+            <article class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Gratuito</span>
+            </article>
 
-        <div class="recurso-card">
-            <div class="icono">📄</div>
-            <h3>Documentos PDF</h3>
-            <p>
-                Descarga apuntes, guías de estudio y material complementario.
-            </p>
-            <button>Ver Recursos</button>
-        </div>
+            <article class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Soporte con IA</span>
+            </article>
+         </article>
 
-        <div class="recurso-card">
-            <div class="icono">📊</div>
-            <h3>Infografías</h3>
-            <p>
-                Aprende conceptos complejos mediante recursos visuales fáciles de comprender.
-            </p>
-            <button>Explorar</button>
-        </div>
+        <!-- Grid de Recursos Educativos -->
+        <section class="container-recursos">
 
-        <div class="recurso-card">
-            <div class="icono">💻</div>
-            <h3>Programación</h3>
-            <p>
-                Accede a ejercicios y ejemplos de HTML, CSS, JavaScript y bases de datos.
-            </p>
-            <button>Aprender</button>
-        </div>
+            <!-- Tarjeta 1: Videos -->
+            <article class="recurso-card">
+                <article class="card-header bg.media">
+                    <span class="icono">🎬</span>
+                    <span class="card-badge">Multimedia</span>
+                </article>
 
-        <article class="recurso-card">
-            <div class="icono">🤖</div>
-            <h3>Ayuda con IA</h3>
-            <p>
-                Utiliza StudyBot para resolver dudas y obtener apoyo en tus estudios.
-            </p>
-            <button>Consultar</button>
-        </article>
+                <article class="card-body">
+                    <h3>Video Educativos</h3>
+                    <p>Aprende mediate clases grabadas, tutoriales prácticos y
+                        explicaciones detalladas paso a paso.</p>
+                        <article class="card-meta">
+                            <span>📹 +45 clases</span>
+                            <span>HD 1080p</span>
+                        </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-recurso">Explorar Videos →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 2: Quizzes -->
+            <article class="recurso-card">
+                <article class="card-header bg-quiz"> 
+                    <span class="icono">📝</span>
+                    <span class="card-badge-interactive">Interactivo</span>
+                </article>
+
+                <article class="card-body">
+                    <h3>Quizzes y Cuestionarios</h3>
+                    <p> Evalúa tus conocimientos con cuestionarios dinámicos, 
+                        autoevaluaciones y ejercicios prácticos con retroalimentación.</p>
+                        <article class="card-meta">
+                            <span>⏱️ 10 - 15 minutos</span>
+                            <span>⭐ Calificación</span>
+                        </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-recurso">Comenzar Test →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 3: PDF -->
+            <article class="recurso-card">
+                <article class="card-header bg-doc">
+                    <span class="icono">📄</span>
+                    <span class="card-badge">Descargable</span>
+                </article>
+
+                <article class="card-body">
+                    <h3>Documentos y Guías PDF</h3>
+                    <p>Descarga apuntes completos o resumidos, guías oficiales de estudio 
+                        y material complementario para repasar.</p>
+                        <article class="card-meta">
+                            <span>📥 PDF Gratis</span>
+                            <span>Imprimible </span>
+                        </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-recurso">Ver Documentos →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 4: Infografías -->
+            <article class="recurso-card">
+                <article class="card-header bg-info">
+                    <span class="icono">📊</span>
+                    <span class="card-badge">Visual</span>
+                </article>
+            
+                <article class="card-body">
+                    <h3>Infografías e Esquemas</h3>
+                    <p>Aprende y repasa conceptos complejos mediante mapas conceptuales y esquemas 
+                        visuales fáciles de comprender.</p>
+                        <article class="card-meta">
+                            <span>🎨 Alta Calidad</span>
+                            <span>Resúmenes</span>
+                        </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-recurso">Ver Infografías →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 5: Programación -->
+            <article class="recurso-card">
+                <article class="card-header bg-code">
+                    <span class="icono">💻</span>
+                    <span class="card-badge badge-pro">Práctico TP</span>
+                </article>
+
+                <article class="card-body">
+                    <h3>Laboratorio de Código</h3>
+                    <p>Accede a ejercicios en vivo, pantillas de proyecto y ejemplos de HTML, CSS,
+                        JavaScript y bases de datos.</p>
+                        <article class="card-meta">
+                            <span>⚙️ Ejercicios</span>
+                            <span>Código base</span>
+                        </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-recurso btn-accent">Práctica Código →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 6: IA StudyBot -->
+             <article class="recurso-card highlight-ai">
+                <article class="card-header bg-ai">
+                    <span class="icono">🤖</span>
+                    <span class="card-badge badge-ai">Asistente Virtual</span>
+                </article>
+
+                <article class="card-body">
+                    <h3>Ayuda con StudyBot IA</h3>
+                    <p>Resuelve dudas académicas al instante, solicita explicaciones personalizadas 
+                        y recibe tutoría 24/7.</p>
+                        <article class="card-meta">
+                            <span>⚡ Respuesta inmediata</span>
+                        </article>
+                </article>
+
+                <article class="card-footer"> 
+                    <button class="btn-recurso btn-ai">Consultar a la IA →</button>
+                </article>
+            </article>
+        </section>
     </main>
-</section>
 
-<a href="study_hub.html" class="btn-volver">&larr; Volver al Inicio</a>
+    <a href="study_hub.html" class="btn-volver">&larr; Volver al Inicio</a>
 
     <script src="study_hub.js"></script>
-
 </body>
 </html>

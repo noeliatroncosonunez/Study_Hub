@@ -8,55 +8,161 @@
 </head>
 <body>
 
-    <header>
-        <h1>🎥 Clases Online</h1>
-        <p>Accede a contenido educativo organizado por asignaturas y aprende a tu propio ritmo.</p>
+    <!-- Encabezado de la Sección -->
+    <header class="hero-clases">
+        <article class="hero-content">
+            <span class="badge-hero">🚀 Cursos y Módulos</span>
+            <h1>Aprende a tu propio ritmo</h1>
+            <p>Accede a contenido interactivo, ejercicios prácticos y material guiado diseñado para fortalecer tu aprendizaje.</p>
+
+            <!-- barra de búsqueda y filtros -->
+             <article class="search-box">
+                <input type="text" placeholder="¿Qué quieres aprender hoy?" (Ej: Matemáticas, Ciencias, Programación)">
+                <button class="btn-search">Buscar</button>
+             </article>
+        </article>
     </header>
 
-    <main class="contenedor-clases">
-        <article class="clase-card">
-            <article class="icono">📐</article>
-            <h2>Matemáticas</h2>
-            <p>Aprende álgebra, geometría, funciones, ecuaciones y resolución de
-                problemas</p>
-            <button>Ver Clases</button>
-        </article>
+    <!-- Contenido Principal -->
+    <main class="contenedor-principal">
 
-        <article class="clase-card">
-            <article class="icono">🔬</article>
-            <h2>Ciencias</h2>
-            <p>Explora biología, química y física mediante recursos interactivos.</p>
-            <button>Ver Clases</button>
-        </article>
+        <!-- Categorías Rápida--> 
+         <article class="filtros-categorias">
+            <button class="filter-btn active">todos</button>
+            <button class="filter-btn">Especialidades TP</button>
+            <button class="filter-btn">Ciencias y mates</button>
+            <button class="filter-btn">Científico Humannista</button>
+         </article>
+        
+        <!-- Grid de Tarjetas de Clases -->
+        <section class="container-clases">
 
-        <article class="clase-card">
-            <article class="icono">📖</article>
-            <h2>Lenguaje</h2>
-            <p>Mejora tu comprensión lectora, escritura y comunicación.</p>
-            <button>Ver Clases</button>
-        </article>
+            <!-- Tarjeta 1: Matemáticas -->
+            <article class="clase-card">
+                <article class="card-header bg-math"">
+                    <span class="icocno">📐</span>
+                    <span class="card-tag">Básica y Media</span>
+                </article>
 
-        <article class="clase-card">
-            <article class="icono">🌎</article>
-            <h2>Historia</h2>
-            <p>Conoce los acontecimientos más importantes de Chile y el 
-                mundo.</p>
-            <button>Ver Clases</button>
-        </article>
+                <article class="card-body">
+                    <h2>Matemáticas</h2>
+                    <p>Aprende álgebra, geometría, funciones, ecuaciones y resolución de problemas.</p>
+                    <article class="card-meta">
+                        <span>📚 12 Módulos</span>
+                        <span>⭐ 4.9</span>
+                    </article>
+                </article>
 
-        <article class="clase-card">
-            <article class="icono">💻</article>
-            <h2>Programación</h2>
-            <p>Aprende HTML, CSS, JavaScript y bases de datos paso a paso.</p>
-            <button>Ver Clases</button>
-        </article>
+                <article class="card-footer">
+                    <button class="btn-clase">Explorar Clases →</button>                </article>
+            </article>
+        
+    
+            <!-- Tarjeta 2: Ciencias -->
+            <article class="clase-card">
+                <article class="card-header bg-sciences">
+                    <span>🔬</span>
+                    <span class="card-tag">Laboratorio</span>
+                </article>
 
-        <article class="clase-card">
-            <article class="icono">🇬🇧</article>
-            <h2>Inglés</h2>
-            <p>Desarrolla vocabulario, gramática y comprensión oral.</p>
-            <button>Ver Clases</button>
-        </article>
+                <article class="card-body">
+                    <h2>Ciencias</h2>
+                    <p>Explora biología, química y física mediante recursos interactivos.</p>
+                    <article class="card-meta">
+                        <span>📚 16 Módulos</span>
+                        <span>⭐ 4.8</span>
+                    </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-clase">Explorar Clases →</button>
+                </article>
+            </article>
+    
+            <!-- Tarjeta 3: Lenguaje y Comunicación -->
+            <article class="clase-card">
+                <article class="card-header bg-language">
+                    <span class="icono">📖</span>
+                    <span class="card-tag">Comunicación</span>
+                </article>
+
+                <article class="card-body">
+                    <h2>Lenguaje y Comunicación</h2>
+                    <p>Mejora tu comprensión lectora, redacción y comunicación.</p>
+                    <article class="card-meta">
+                        <span>📚 10 Módulos</span>
+                        <span>⭐ 4.7</span>
+                    </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-clase">Explorar Clases →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 4: Historia -->
+            <article class="clase-card">
+                <article class="card-header bg-history">
+                    <span class="icono">🌎</span>
+                    <span class="card-tag">Sociales</span>
+                </article>
+
+                <article class="card-body">
+                    <h2>Historia</h2>
+                    <p>Descubre la historia mundial y latinoamericana de manera interactiva.</p>
+                    <article class="card-meta">
+                        <span>📚 8 Módulos</span>
+                        <span>⭐ 4.6</span>
+                    </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-clase">Explorar Clases →</button>
+                </article>
+            </article>
+
+            <!-- Tarjeta 5: Programación -->
+            <article class="clase-card highlight">
+                <article class="card-header bg-programming">
+                    <span class="icono">💻</span>
+                    <span class="card-tag">Especialidad TP</span>
+                </article>
+
+                <article class="card-body">
+                    <h2>Programación</h2>
+                    <p>Aprende HTML, CSS, Control de versiones, JavaScript, y bases de datos paso a paso desde cero.</p>
+                    <article class="card-meta">
+                        <span>📚 24 Módulos</span>
+                        <span>⭐ 5.0</span>
+                    </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-clase">Explorar Clases →</button>
+                </article>
+            </article>
+
+            <article class="clase-card">
+                <article class="card-header bg-english">
+                    <span class="icono">🗣️</span>
+                    <span class="card-tag">Idiomas</span>
+                </article>
+
+                <!-- Tarjeta 6: Inglés -->
+                <article class="card-body">
+                    <h2>Inglés</h2>
+                    <p>Desarrolla vocabulario, gramática y comprensión auditva.</p>
+                    <article class="card-meta">
+                        <span>📚 14 Módulos</span>
+                        <span>⭐ 4.8</span>
+                    </article>
+                </article>
+
+                <article class="card-footer">
+                    <button class="btn-clase">Explorar Clases →</button>
+                </article>
+            </article>
+        </section>
     </main>
 
  <a href="study_hub.html" class="btn-volver">&larr; Volver al Inicio</a>
